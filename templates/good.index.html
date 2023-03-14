@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Router Interfaces</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <meta http-equiv="refresh" content="15">
+</head>
+<body>
+    <h1>CSR1000v Router Interfaces</h1>
+    <table>
+        <tr>
+            <th>Interface Name</th>
+            <th>Description</th>
+            <th>IP Address</th>
+            <th>Subnet Mask</th>
+            <th>Interface Up</th>
+        </tr>
+        {% for interface in interface_info %}
+        <tr>
+            <td>{{ interface[0] }}</td>
+            <td>{{ interface[1] }}</td>
+            <td>{{ interface[2] }}</td>
+            <td>{{ interface[3] }}</td>
+            <td>{{ interface[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
