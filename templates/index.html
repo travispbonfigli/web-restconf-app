@@ -21,7 +21,7 @@
             <td>{{ interface[1] }}</td>
             <td>{{ interface[2] }}</td>
             <td>{{ interface[3] }}</td>
-            <td>{{ interface[4] }}</td>
+            <td {% if not interface[4] %}style="color:red;"{% endif %}>{{ interface[4] }}</td>
         </tr>
         {% endfor %}
     </table>
